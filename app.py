@@ -1,0 +1,1 @@
+print("Olá mundo Linux + GitHub + Python")
