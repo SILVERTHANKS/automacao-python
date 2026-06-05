@@ -1,0 +1,35 @@
+{
+    "workbench.colorCustomizations": {
+        "editor.background": "#1e1e1e00",
+        "sideBar.background": "#25252600",
+        "activityBar.background": "#33333300"
+    },
+    "editor.fontSize": 14,
+    "editor.fontFamily": "'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "workbench.iconTheme": "vscode-icons",
+    "python.defaultInterpreterPath": "./venv/bin/python",
+    "terminal.integrated.tabs.enabled": true,
+    
+    // Produtividade Equilibrada (Sem IA intrometida)
+    "editor.formatOnSave": false,
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "off",
+        "strings": "off"
+    },
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingQuotes": "always",
+    "editor.autoSurround": "languageDefined",
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "basic",
+    
+    // Bloqueio do Copilot caso ele tente ligar sozinho
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "python": false
+    }
+}
