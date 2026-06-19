@@ -1,11 +1,28 @@
 # usuarios.py
 class Usuarios:
     def __init__(self, nome, idade):
-        self.nome=nome
-        self.idade=idade
+        self.nome = nome
+        self.idade = idade
 
-    def cadastro(self):
-        print(f'O Seu nome :{self.nome} e sua idade : {self.idade}')
+    def __repr__(self):
+        return f'{self.nome} - {self.idade} anos'
 
-c=Usuarios('carlos',45)
-c.cadastro()        
+
+def cadastro():
+    cad = []
+    while True:
+        nome = input('Digite seu nome: ').strip()
+        idade = int(input('Digite sua idade: '))
+        usuario = Usuarios(nome, idade)
+        cad.append(usuario)
+
+        continuar = input('Deseja cadastrar outro? (s/n): ').lower()
+        if continuar != 's':
+            break
+
+    print('Lista de usuários cadastrados:')
+    for u in cad:
+        print(u)
+
+
+cadastro()
